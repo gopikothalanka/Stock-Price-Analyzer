@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style-type: none;
+}
+
+
+:root{
+  --profit-bg:#36A300;
+  --profit-font:#007700;
+  --loss-bg:#EF5350;
+  --loss-font:#C80D07;
+  --backGround:linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+body{
+  background-image: url(./undraw_Growing_re_olpi.svg);
+  background-repeat: no-repeat;
+  background-position:bottom ;
+  
+
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  min-height:80vh;
+}
+.normal{
+  background: rgba(255,255,255,0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+}
+.container h1{
+  text-align: center;
+  margin: 2rem 1rem 1rem 1rem;
+  font-size: 3rem;
+  color: #111725;
+  
+}
+.container .inputs ul li{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.container .inputs ul li p{
+  padding:3px;
+
+}
+.container .inputs ul li input{
+  width: 7rem;
+  margin-left: 1rem;
+  border: 2px solid black;
+  padding:3px;
+  border-radius: 5px;
+}
+.outputs{
+  margin: 1rem;
+}
+.outputs ul li{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.profit{
+  color: #007700;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.loss{
+  color: var(--loss-font);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.Button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  padding:0.5rem;
+  background: rgba( 255, 255, 255, 0.18 );
+  border-radius: 5px;
+  border:black solid 1px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700; 
+  cursor: pointer;
+}
+button:active{
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width:425px) {
+  .container{
+    min-height: 100vh;
+  }
+}

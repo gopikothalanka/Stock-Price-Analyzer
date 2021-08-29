@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/8705f20c86.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Stock Price Analyzer</title>
+</head>
+<body>
+  <div class="container normal" id="container">
+    <h1>Stock Price Analyzer</h1>
+    <section class="inputs">
+      <ul>
+        <li><p>Invested </p><input class="inputs" type="text" placeholder="Enter Amount " id="Invested"></li>
+        <li><p>No. of Shares</p><input class="inputs" type="text" placeholder="No. of Shares" id="numberOf"></li>
+        <li><p>Current Price</p><input class="inputs" type="text" placeholder="Current Value" id="currentPrice"></li>
+        
+      </ul>
+      <div class="Button"> <button class="Btn" id="Btn" onclick="getInputs()"> Submit </button> </div>
+
+    </section>
+    <section class="outputs">
+      <ul>
+        <li id="inputOne"></li>
+        <li id="inputTwo"></li>
+        <li id="perOneShare1"></li>
+        <li id="inputThree"></li>
+      </ul>
+      <p id="profitOrLoss"></p>
+      <p id="danger"></p>
+    </section>
+  </div>
+  <script src="./script.js  "></script>
+</body>
+</html>
